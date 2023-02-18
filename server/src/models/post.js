@@ -4,7 +4,7 @@ const db = require('../config/database');
 module.exports = {
 	getPosts: () => {
 		return new Promise((resolve, reject) => {
-			db.select().from('posts').then((rows) => resolve(rows)).catch((err) => reject(err));
+			db.select().from('posts').orderBy('updated_at', 'desc').then((rows) => resolve(rows)).catch((err) => reject(err));
 		})
 	},
 	createPost: (data) => {
