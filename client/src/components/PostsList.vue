@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="posts">
     <router-link class="
       inline-block
       px-6 py-2.5
