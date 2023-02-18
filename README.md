@@ -1,5 +1,7 @@
 # Simple CRUD
-
+```
+node >= v16.13.0
+```
 ## Project setup
 
 ### Install
